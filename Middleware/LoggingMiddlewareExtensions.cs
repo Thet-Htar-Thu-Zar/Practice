@@ -6,5 +6,10 @@
         {
             return builder.UseMiddleware<LoggingMiddleware>();
         }
+
+        public static IApplicationBuilder AddMiddleware(this WebApplication app)
+        {
+            return app.UseMiddleware<LoggingMiddleware>();
+        }
     }
 }

@@ -20,7 +20,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseLoggingMiddleware();
+app.AddMiddleware();
 
 app.UseAuthorization();
 
